@@ -1,13 +1,16 @@
 package jus.aoo.tri.triable;
 
 import java.util.Comparator;
+
+import jus.aoo.tri.Triable;
+
 import java.math.*;
 
 public class StringTriable implements Triable<String> {
 
 	@Override
 	public String newInstance() {
-		String rand = (Math.random()*10000000)+"";
+		String rand = (int)(Math.random()*10000000)+"";
 		return rand;
 	}
 
