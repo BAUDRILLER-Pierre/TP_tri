@@ -34,6 +34,10 @@ public abstract class Tri {
     	time=System.nanoTime()-time;
     	return res;        
     }
+    /*une souris verte qui courrait dans l'herbe, je l'attrape par la queue je la montre à ces messieurs.
+     * Ces messieurs me disent, tremper la dans l'huile
+     */
+    /*1 bidon 2 bidons 3bidons d'eau, 4bidons d'eau, 5 bidons d'eau, 6 bidons 7 bidons 8bidons d'eau 9 10 bidons d'eau à toi */
     /** version assurant le tri selon un algorithme particulier **/
     protected abstract<T> T[] sort(T[] tab,Comparator<T> c) ;
     /*-----------------------------------------------------------------------------
