@@ -8,20 +8,19 @@ public class MaximumSort extends Tri {
 
 	@Override
 	protected <T> T[] sort(T[] tab, Comparator<T> c) {
-		
-		// Init
-		
-		T[] D ;
-		T[] G = tab.clone(); 
-		
-		// Cherche le max de G
-		
-		// permutte ce max avec le dernier element de G
-		
-		// met le dernier element de G à la en début de D
-		
-		// recommencer jusqu'à taille de G == 1 
-		return null;
+
+
+for (int i = tab.length-1; i>= 0 ; i--) {
+	int k=i;
+	for (int j=i;j>=0;j--){
+		if (c.compare(tab[j], tab[k])>0) {k=j;}
+			
+		}swap(tab,i,k);
+	}
+
+
+
+		return tab;
 	}
 
 }
