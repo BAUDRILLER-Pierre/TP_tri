@@ -26,16 +26,16 @@ public abstract class Tri {
      * @param t le tableau à trier
      * @return le tableau trié
      */
-    public Object[] trier(Object[] t,Comparator c){
+    public <T> T[] trier(T[] t,Comparator<T> c){
     	count=0;
-    	Object[] tab = t.clone();        
+    	T[] tab = t.clone();        
     	time=System.nanoTime();
-    	Object[] res = sort(tab,c);
+    	T[] res = sort(tab,c);
     	time=System.nanoTime()-time;
     	return res;        
     }
     /** version assurant le tri selon un algorithme particulier **/
-    protected abstract Object[] sort(Object[] t,Comparator c) ;
+    protected abstract<T> T[] sort(T[] tab,Comparator<T> c) ;
     /*-----------------------------------------------------------------------------
  	  la suite de méthodes sont utiles pour faire la mise en œuvre de l’algorithme
  	  et assurer le décompte des affectations
